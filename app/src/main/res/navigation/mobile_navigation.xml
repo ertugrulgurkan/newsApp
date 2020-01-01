@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/mobile_navigation"
+  app:startDestination="@+id/navigation_science">
+
+  <fragment
+    android:id="@+id/navigation_science"
+    android:name="com.ertugrul.news.fragments.ScienceFragment"
+    android:label="@string/title_science"
+    tools:layout="@layout/fragment_science" />
+
+  <fragment
+    android:id="@+id/navigation_sports"
+    android:name="com.ertugrul.news.fragments.SportsFragment"
+    android:label="@string/title_sports"
+    tools:layout="@layout/fragment_sports" />
+
+  <fragment
+    android:id="@+id/navigation_technology"
+    android:name="com.ertugrul.news.fragments.TechnologyFragment"
+    android:label="@string/title_technology"
+    tools:layout="@layout/fragment_technology" />
+</navigation>
